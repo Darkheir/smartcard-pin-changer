@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 /**
  * Handle all the PKCS11 related operations in the program.
  *
- * @author IAM
+ * @author Raphaël Cohen
  */
 public class TokenManager {
 
@@ -102,7 +102,6 @@ public class TokenManager {
      * Release context
      */
     public void release() {
-        //CAtch le bordel
         System.out.println("Releasing token context");
         try {
             this.token.closeAllSessions();

@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  * The Main class to the SmartCardPinChanger program. Handle user inputs and the
  * calls to the token manager
  *
- * @author IAM
+ * @author Raphaël Cohen
  */
 public class SmartCardPinChanger {
 
@@ -24,7 +24,6 @@ public class SmartCardPinChanger {
      * @param args Arguments
      */
     public static void main(String[] args) {
-        //C:\Program Files\Gemalto\Classic Client\BIN\gclib.dll
         String dll = getDLLPath();
         TokenManager tokenManager = new TokenManager();
         if (tokenManager.initialize(dll)) {
